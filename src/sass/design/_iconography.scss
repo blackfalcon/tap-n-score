@@ -1,0 +1,42 @@
+// iconography
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid map-get($colors, white);
+  position: relative;
+  margin-right: 30px;
+  margin-left: calc(50% - 135px);
+  background-color: map-get($colors, orange);
+
+  img {
+    display: map-get($colors, black);
+    width: 100%;
+  }
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid map-get($colors, white);
+    position: absolute;
+    left: 110%;
+    top: calc(50% - 10px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: calc(50% - 90px);
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: map-get($colors, white);
+  font-size: 2em;
+}

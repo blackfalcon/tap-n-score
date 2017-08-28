@@ -1,0 +1,13 @@
+// titles
+.start-game,
+.pause-game,
+.change-speed {
+  position: absolute;
+  top: 35vh;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+  font-family: map-get($type, headline);
+  line-height: 1;
+  z-index: map-get($index, titles);
+}

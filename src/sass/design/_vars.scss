@@ -1,0 +1,45 @@
+// Responsive queries
+$tablet: 768px;
+
+// Range slider
+$thumb: 32px;
+
+// colors
+$colors: (
+  white: #fff,
+  black: #000,
+  orange: #ffa500,
+  body: #2f1200,
+  game-board: #fff8f0,
+  headline: #fff8f0,
+  game-header: #2F1200,
+  controller: #2F1200,
+  button: #fff8f0
+);
+
+// Typography
+$type: (
+  import: ('https://fonts.googleapis.com/css?family=Bungee+Inline'),
+  headline: ('Bungee Inline', cursive)
+);
+
+// z-index
+$index: (
+  target: 100,
+  controller: 200,
+  titles: 300,
+);
+
+// Animations
+$speed: (
+  slow: 120vh,
+  fast: 1000vh,
+  fastest: 5000vh
+);
+
+// target images
+$target: (
+  soccer: ('http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Football-PNG-Transparent-Image.png'),
+  basket: ('https://upload.wikimedia.org/wikipedia/commons/9/96/NEBL-Spalding-basket-ball.png'),
+  tennis: ('https://vignette4.wikia.nocookie.net/nintendo/images/3/3e/MTO_Tennis_Ball.png/revision/latest?cb=20120504075543&format=original&path-prefix=en')
+);

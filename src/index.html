@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tap N Score</title>
+        <meta name="description" content="It's a litte game just for fun!">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+        <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <symbol id="icon-plus-alt" viewbox="0 0 32 32">
+                    <title>plus-alt</title>
+                    <path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM24 18h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4z"></path>
+                </symbol>
+                <symbol id="icon-minus-alt" viewbox="0 0 32 32">
+                    <title>minus-alt</title>
+                    <path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM24 18h-16v-4h16v4z"></path>
+                </symbol>
+            </defs>
+        </svg>
+
+        <main class="main-container">
+            <header class="game-header">
+                <div class="user-avatar">
+                    <img src="https://cdn4.iconfinder.com/data/icons/SIGMA/networking/png/400/anonymous.png">
+                </div>
+                <div class="my-score">00</div>
+                <div class="button__container">
+                    <button class="button start" id="game-toggle" data-state="off">Start</button>
+                </div>
+            </header>
+
+            <section class="game-board"></section>
+            <div class="titles__container">
+                <div class="start-game hidden">Ready.<br/>Set. GO!</div>
+                <div class="pause-game hidden">Game Paused</div>
+                <div class="change-speed hidden">Game Speed: <span class="game-speed">3</span></div>
+            </div>
+
+            <section class="control__container">
+                <div class="">
+                    <svg class="icon icon-minue"><use xlink:href="#icon-minus-alt"></use></svg>
+                </div>
+                <div class="range-slider__container">
+                    <input type="range" id="speed-bar" min="1" max="10" step="1" value="3">
+                    <p>Game speed: <span class="game-speed">3</span></p>
+                </div>
+                <div class="">
+                    <svg class="icon icon-plus"><use xlink:href="#icon-plus-alt"></use></svg>
+                </div>
+            </section>
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+            <script src="js/main.js"></script>
+        </main>
+    </body>
+</html>

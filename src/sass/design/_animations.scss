@@ -1,0 +1,54 @@
+// animations
+.falling {
+   transform: translateY(map-get($speed, slow));
+}
+
+.stop-drop {
+  transform: translateY(map-get($speed, fastest));;
+}
+
+.pop {
+  transform: translateY(map-get($speed, fast));
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1
+  }
+
+  50% {
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3)
+  }
+
+  50%,to {
+    opacity: 0
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1
+  }
+
+  50% {
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3)
+  }
+
+  50%,to {
+    opacity: 0
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut
+}
